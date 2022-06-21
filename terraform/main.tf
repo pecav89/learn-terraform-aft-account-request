@@ -57,3 +57,32 @@ module "pete_cav" {
   account_customizations_name = "pete-cavs-sandbox"
 }
 
+
+module "hub_and_spoke_poc" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "aws-accounts+hub-poc@nhsbsa.nhs.uk"
+    AccountName               = "Hub-and-Spoke-POC"
+    ManagedOrganizationalUnit = "Network"
+    SSOUserEmail              = "aws-accounts@nhsbsa.nhs.uk"
+    SSOUserFirstName          = "Hub and Spoke"
+    SSOUserLastName           = "POC"
+  }
+
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "Peter Cavanagh"
+    change_reason       = "Adding Hub and Spoke POC account"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "Hub-and-Spoke-POC"
+}
+
