@@ -64,7 +64,7 @@ module "hub_and_spoke_poc" {
   control_tower_parameters = {
     AccountEmail              = "aws-accounts+hub-poc@nhsbsa.nhs.uk"
     AccountName               = "Hub-and-Spoke-POC"
-    ManagedOrganizationalUnit = "Network"
+    ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "aws-accounts@nhsbsa.nhs.uk"
     SSOUserFirstName          = "Hub and Spoke"
     SSOUserLastName           = "POC"
