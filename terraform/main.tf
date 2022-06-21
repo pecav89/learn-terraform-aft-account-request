@@ -83,6 +83,6 @@ module "hub_and_spoke_poc" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Hub and Spoke POC"
+  account_customizations_name = "hub-and-spoke-poc"
 }
 
