@@ -63,7 +63,7 @@ module "hub_and_spoke_poc" {
 
   control_tower_parameters = {
     AccountEmail              = "aws-accounts+hub-poc@nhs.net"
-    AccountName               = "Hub and Spoke POC"
+    AccountName               = "hub-spoke-poc"
     ManagedOrganizationalUnit = "Shared Services"
     SSOUserEmail              = "aws-accounts+hub-poc@nhs.net"
     SSOUserFirstName          = "Hub and Spoke"
@@ -83,6 +83,6 @@ module "hub_and_spoke_poc" {
     group = "non-prod"
   }
 
-  account_customizations_name = "hub-and-spoke-poc"
+  account_customizations_name = "hub-spoke-poc"
 }
 
