@@ -62,10 +62,10 @@ module "hub_and_spoke_poc" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "aws-accounts+hub-poc@nhsbsa.nhs.uk"
-    AccountName               = "Hub-and-Spoke-POC"
+    AccountEmail              = "aws-accounts+hub-poc@nhs.net"
+    AccountName               = "Hub and Spoke POC"
     ManagedOrganizationalUnit = "Shared Services"
-    SSOUserEmail              = "aws-accounts@nhsbsa.nhs.uk"
+    SSOUserEmail              = "aws-accounts+hub-poc@nhs.net"
     SSOUserFirstName          = "Hub and Spoke"
     SSOUserLastName           = "POC"
   }
@@ -83,6 +83,6 @@ module "hub_and_spoke_poc" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Hub-and-Spoke-POC"
+  account_customizations_name = "Hub and Spoke POC"
 }
 
