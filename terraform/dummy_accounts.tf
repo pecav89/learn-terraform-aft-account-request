@@ -12,6 +12,7 @@ module "dummy_00" {
 
   account_tags = {
     "Learn Tutorial" = "AFT"
+    "Dummy Account"  = true
   }
 
   change_management_parameters = {
@@ -26,62 +27,65 @@ module "dummy_00" {
   account_customizations_name = "dummy-00"
 }
 
-module "dummy_01" {
-  source = "./modules/aft-account-request"
+# module "dummy_01" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "peter.cavanagh2+dummy-01@nhs.net"
-    AccountName               = "dummy-01"
-    ManagedOrganizationalUnit = "Sandpit"
-    SSOUserEmail              = "peter.cavanagh2+dummy-01@nhs.net"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "peter.cavanagh2+dummy-01@nhs.net"
+#     AccountName               = "dummy-01"
+#     ManagedOrganizationalUnit = "Sandpit"
+#     SSOUserEmail              = "peter.cavanagh2+dummy-01@nhs.net"
+#     SSOUserFirstName          = "Sandbox"
+#     SSOUserLastName           = "AFT"
+#   }
 
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
+#   account_tags = {
+#     "Learn Tutorial" = "AFT"
+#     "Dummy Account"  = true
 
-  change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
-  }
+#   }
 
-  custom_fields = {
-    group = "non-prod"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "HashiCorp Learn"
+#     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+#   }
 
-  account_customizations_name = "dummy-01"
-}
+#   custom_fields = {
+#     group = "non-prod"
+#   }
+
+#   account_customizations_name = "dummy-01"
+# }
 
 
-module "dummy_02" {
-  source = "./modules/aft-account-request"
+# module "dummy_02" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "peter.cavanagh2+dummy-02@nhs.net"
-    AccountName               = "dummy-02"
-    ManagedOrganizationalUnit = "Sandpit"
-    SSOUserEmail              = "peter.cavanagh2+dummy-02@nhs.net"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "peter.cavanagh2+dummy-02@nhs.net"
+#     AccountName               = "dummy-02"
+#     ManagedOrganizationalUnit = "Sandpit"
+#     SSOUserEmail              = "peter.cavanagh2+dummy-02@nhs.net"
+#     SSOUserFirstName          = "Sandbox"
+#     SSOUserLastName           = "AFT"
+#   }
 
-  account_tags = {
-    "Learn Tutorial" = "AFT"
-  }
+#   account_tags = {
+#     "Learn Tutorial" = "AFT"
+#     "Dummy Account"  = true
+#   }
 
-  change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "HashiCorp Learn"
+#     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+#   }
 
-  custom_fields = {
-    group = "non-prod"
-  }
+#   custom_fields = {
+#     group = "non-prod"
+#   }
 
-  account_customizations_name = "dummy-02"
-}
+#   account_customizations_name = "dummy-02"
+# }
 
 
 module "dummy_03" {
@@ -98,6 +102,7 @@ module "dummy_03" {
 
   account_tags = {
     "Learn Tutorial" = "AFT"
+    "Dummy Account"  = true
   }
 
   change_management_parameters = {
